@@ -20,3 +20,28 @@ const myFunc=function(){
 console.log(typeof obj);
 console.log(typeof array);
 console.log(typeof myFunc);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//stack(primitive) ,Heap(non-primitive)
+
+let mytoutube="bablu.com"
+
+let anothername=mytoutube;
+
+anothername="chai aur code"
+
+console.log(mytoutube);
+console.log(anothername);
+
+
+let userOne={
+    email:"user@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo=userOne
+
+userTwo.email="hites@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)

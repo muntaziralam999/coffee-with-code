@@ -30,7 +30,7 @@ console.log(obj3);
 const pobj4={...obj1,...obj2}    // ye bhi multiple array ko merge karne ke liye 
 
 console.log(Object.keys(tinderUser)); // object ander ke sare key ko nikalne ke liye
-console.log(Object.keys(tinderUser)); // object ke ander ke sare value ko niklne ke liye 
+console.log(Object.values(tinderUser)); // object ke ander ke sare value ko niklne ke liye 
 
 console.log(Object.entries(tinderUser)); // key aur value ko array main convert karke alag alag krke deta hai
 

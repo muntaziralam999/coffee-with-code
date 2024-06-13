@@ -27,7 +27,33 @@ function one(){
 
 // one()
 
-if(true){
-    cont username="bablu";
+// if(true){
+//     const username="bablu";
+//     if(username==="bablu"){
+//         const website="yotube"
+//         console.log(username+website)
+//     }
+//     console.log(website)
+
     
+// }
+// console.log(username)
+
+
+//++++++++++++++++++ interesting  +++++++++++++++++
+
+// console.log(addone(5))
+
+function addone(num){
+    return num+1
 }
+
+
+
+console.log(addtwo(5))
+
+const addtwo=function(hum){
+    return num+2
+ 
+}
+

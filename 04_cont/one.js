@@ -17,9 +17,14 @@
 // }
 
 
+// ham  i parkar se bhi iff ka use kar sakte hai nina premtheses ke 
+
 
 // const balance=1000;
 // // if(balance>500) console.log("test")
+
+
+
 
 // if (balance<500){
 //     console.log("less than 500")
@@ -35,16 +40,21 @@
 // const loggedinfromGoogle=false;
 // const loggedinfromEmail=true
 
+// multiple  condition check isme dono condittion true hona chaiyes
+
 
 // if(userLoggedIn && debitCard){
 //     console.log("allow to buys course")
 // }
 
+// imse  same but isme ek condition true hona kam hoajrga 
+
+
 // if(userLoggedIn || debitCard){
 //     console.log("user loggedIN")
 // }
 
-// switch case satement 
+// switch case satement  
 
 // switch (key) {
 //     case value:
@@ -97,14 +107,41 @@
 // truthy values
 // "0" , 'false'," " empity string, [] empity array , {} empity obj, function(){} empity func,
 
-const arr=[]
 
-if (arr.length===0){
-    console.log("Array is empity")
-}
 
-const obj={}
+//  empty array ko check karne ke liye 
 
-if (Object.keys(obj).length===0){
-    console.log("obj is empity")
-}
+
+
+// const arr=[]
+
+// if (arr.length===0){
+//     console.log("Array is empity")
+// }
+
+//  empty object  ko check karne ke liye 
+
+// const obj={}
+
+// if (Object.keys(obj).length===0){
+//     console.log("obj is empity")
+// }
+
+
+
+
+// nulish coalescing operater (??):null undefined  iska use null aur undefinded ke liye agar koi value aaye to pahle aa jayega 
+    // agar pahle wale value ke jagah pe null ya undefined aa jane pe seound value exicute hoga 
+let val1;
+// val1=5??10
+
+// val1=null??10
+
+val1 =undefined ??15
+console.log(val1)
+
+// turnary oprate ++++++++++++++++++++++++++++
+
+const icep=100;
+
+icep<=80 ?console.log("less than 80"):console.log("more than 80")

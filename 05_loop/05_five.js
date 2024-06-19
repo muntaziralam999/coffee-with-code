@@ -4,6 +4,8 @@ const coding=["js","ruby","java","python","cpp"]
 //     console.log(val)
 // })
 
+// arrow function ka use krkr
+
 // coding.forEach((val)=>{
 //     console.log(val)
 // })

@@ -4,21 +4,33 @@ const coding=["js","ruby","java","python","cpp"]
 //     console.log(val)
 // })
 
-// arrow function ka use krkr
+// arrow function ka use krkr 
 
 // coding.forEach((val)=>{
 //     console.log(val)
 // })
+
+
+//+++++++++++++++++ kud se ek fuction bana ke uske ander use kiya foreach ke ander
 
 // function printME(item){
 //     console.log(item)
 // }
 // coding.forEach(printME)
 
+
+
+// for each ke 3 pramter hota hai ek item dusra uska index no uske sath main pura array bhi print kar sakte ho 
+
 // coding.forEach((item,index,arr)=>{
 //     console.log(item,index,arr)
 
 // })
+
+
+
+
+// object main foreach ka use 
 
 const mycoding=[
     {

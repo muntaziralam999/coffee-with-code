@@ -28,17 +28,25 @@
         }
         optAdd("java")
 
-        //edit
-        const secoundlang=document.querySelector("li:nth-child(2)")
-        //secoundlang.innerHTML="mojo"
-        const newli=document.createElement("li")
-        newli.textContent="mojo"
-        secoundlang.replaceWith(newli)
+        // //edit
+        // const secoundlang=document.querySelector("li:nth-child(2)")
+        // //secoundlang.innerHTML="mojo"
+        // const newli=document.createElement("li")
+        // newli.textContent="mojo"
+        // secoundlang.replaceWith(newli)
 
         // edit
 
-        const firstlang=document.querySelector("li:first-child")
-        firstlang.outerHTML='<li>Typescript<li>'
+        // const firstlang=document.querySelector("li:first-child")
+        // firstlang.outerHTML='<li>Typescript<li>'
+
+            function edit(i,d){
+                const Anylang=document.querySelectorAll('li')[i]
+                console.log(Anylang);
+                Anylang.outerHTML=`<li>${d}<li>`
+            }
+            edit(3,"pk")
+
         
         // remove
         const Lastlang=document.querySelector('li:last-child')

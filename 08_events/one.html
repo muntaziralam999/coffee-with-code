@@ -19,10 +19,15 @@
    </div>
 </body>
     <script>
+       // pahala aprocah  event ka 
+
         // document.getElementById('owl').onclick =function(){
         //     alert("owl click")
         // }
         
+        // dusra aproach event ka add eventlistner ke thorw
+
+
         // document.getElementById('owl').addEventListener('click',function(e){
         //     console.log(e)
         // })
@@ -33,15 +38,23 @@
         // altkey ,ctrlkey,Shiftkey, keycode 
 
         
+        
+        // ture aur false ke bich ka difrennt ek sath prent aur child pe onlclick lagane bad samjh main aayega 
+        // false lagane se pahle child div select hoga aur uske bad prent 
+        // true lagane se pahle prent wala select hoga bad main child wala fire hoa 
 
         // document.getElementById('images').addEventListener('click',function(e){
         //     console.log("clicked inside the ul")
-        // },false)
+        // },true)
 
         // document.getElementById('owl').addEventListener('click',function(e){
         //     console.log("clicked inside the wol")
         //     e.stopPropagation()
-        // },false)
+        // },true)
+
+
+
+
 
         // document.getElementById('google').addEventListener('click',function(e){
             
@@ -49,6 +62,9 @@
         //     e.stopPropagation()
         //     console.log("google clicked ")
         // })
+
+
+        // project click pe delete ho jaye 
 
         document.querySelector('#images').addEventListener('click',function(e){
             console.log(e.target.tagName)

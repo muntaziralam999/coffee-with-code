@@ -10,23 +10,27 @@
     <button id="stop">Stop</button>
 </body>
     <script>
+
+        // seet timeout syntax
+
         // setTimeout(function(){
         //     console.log("hiteesh")
         // },2000)
 
+        // settime out by function and dom 
+
         const sayhitesh=function(){
             console.log("hitesh")
         }
-        const chnage=function(){
 
-        
-        document.querySelector('h1').innerHTML="best js series"
+        const chnage=function(){
+             document.querySelector('h1').innerHTML="best js series"
 
         }
 
         const changeME= setTimeout(chnage,2000)
 
-        // clearTimeout(changeME)
+        // clearTimeout(changeME)   // simple cleartime out 
 
         document.querySelector('#stop').addEventListener('click',function(){
             clearTimeout(changeME)

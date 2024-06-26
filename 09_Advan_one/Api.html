@@ -6,18 +6,31 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-      const reuestUrl='https://api.github.com/users/muntaziralam999'  
-      const xhr=  new XMLHttpRequest();
-      xhr.open('GET',reuestUrl)
-      xhr.onreadystatechange=function(){
-        console.log(xhr.readyState)
-        if(xhr.readyState===4){
-            const data=JSON.parse(this.responseText)
-            console.log(data.followers)
-        }
-      }
-     xhr.send()
-    </script>
+      <div>
+          <div id="p"></div>
+          <img id="img" src="" alt="">  
+      </div>
 </body>
+<script>
+  const p= document.getElementById('p')
+  console.log(p)
+
+  const f= document.getElementById('img')
+  console.log(f)
+  const reuestUrl='https://api.github.com/users/muntaziralam999'  
+  const xhr=  new XMLHttpRequest();
+  
+  xhr.open('GET',reuestUrl)
+  xhr.onreadystatechange=function(){
+    console.log(xhr.readyState)
+    if(xhr.readyState===4){
+        const data=JSON.parse(this.responseText)
+        console.log(data.followers)
+        p.innerHTML=data.followers
+        console.log(data.avatar_url)
+        f.src=data.avatar_url
+    }
+  }
+ xhr.send()
+</script>
 </html>

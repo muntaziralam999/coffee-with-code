@@ -20,6 +20,9 @@
 
 
 // // promise ko ham bina varilable ke exixute kar sakte hai 
+
+
+
 //     new Promise(function(resolve,reject){
 //      setTimeout(function(){
 //         console.log('async task 2 is complete')
@@ -33,8 +36,8 @@
 
 
 
-// create new promise   threee 
-
+// create new promise  threee  resolve ke ander koi data hai usko handle karne tarika 
+ 
 // const promiseone3=new Promise(function(resolve,reject){
 //     setTimeout(function(){
         
@@ -42,7 +45,7 @@
 //     },1000)
 // })
 
-// // resolve main data hai usko handle karne ke liye 
+// // resolve main data hai usko handle karne ke liye function ander user main uske data store kar rahe hia
 
 // promiseone3.then(function(user){
 //     console.log(user)
@@ -50,7 +53,8 @@
 // })
 
 
-// create promise no four 
+// create promise no four  reseolve aur reject dono hadle karte hai jis parkar than resolve data ko handle karta hai usi 
+// usi parkar reject ke data ko catch hadle karta hai 
 
 
 // const promiseone4=new Promise(function(resolve,reject){
@@ -65,7 +69,8 @@
 //     },1000)
 // })
 
-// resolve main data hai usko handle karne ke liye 
+// resolve reject data ho handle ka rahe hai th promise ki chaining bhi kar rahe hai aur last main final ka use kar arhe hai 
+// basicly faninaly kya karta hai code reject ho resolve dono main aapko inform karta hai ki code execute hu hai ya nhi 
 
 // promiseone4.then(function(user){
 //     console.log(user)
@@ -80,7 +85,7 @@
 
 
 
-// create promise no five
+// create promise no five  promise ko Asnc await ke dawar hanle karne ka tarika 
 
 
 // const promiseone5=new Promise(function(resolve,reject){
@@ -95,13 +100,17 @@
 //     },1000)
 // })
 
-// resolve main data hai usko handle karne ke liye 
+// basiclly Async await bhi jo data asyncrolly aaata hai usi ko handle karta hai thana aur catch ke throw isme 
+// thora sa change hai ki code ko thora sa rok ke kam karta hai 
 
 // async function consumepromise(){
 //     const responce=await promiseone5
 //     console.log(responce);
 // }
 // consumepromise()
+
+
+// agar asyc await ko main eror aata hai to usko handle karne ke try aur catch ka use kiya jaata hai 
 
 
 // async function consumepromise(){
@@ -132,6 +141,7 @@
 // getAlluser()
 
 
+// api se fetch kiye gaye data ko then aur catch se handle karne ka trika 
 
 fetch('https://api.github.com/users/muntaziralam999')
 .then((response)=>{

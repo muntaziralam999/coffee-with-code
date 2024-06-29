@@ -16,7 +16,7 @@ function createUser(username,score){
 
 // create user ke ander ek naya function bana ke inject kr diya 
 createUser.prototype.increment=function(){
-    this.score
+    this.score++
 }
 
 // create user ke ander  ek aur  naya function bana ke inject kr diya 
@@ -31,6 +31,6 @@ createUser.prototype.printme=function(){
 
 
 const chai=new createUser("chai",25)
-const tea=new createUser("tea",250)
+// const tea=new createUser("tea",250)
 
 chai.printme()

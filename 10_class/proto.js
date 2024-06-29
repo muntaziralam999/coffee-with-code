@@ -13,10 +13,15 @@ let heropower={
         console.log(`spider power is${this.spiderman}`)
     }
 }
+ 
+// isme hamne heropower obejct ke ander inject karne bajaye hamne sidhe object adner hi inject kar diya ki jitne object bane ho sabke 
+// ke nader inject ho wo kisi bhi name se object bane ho 
 
 Object.prototype.hitesh=function(){
     console.log(`hitesh is present is all object`)
 }
+
+// same kam hamne araay ke sath kiya object jaisa 
 
 Array.prototype.heyhitesh=function(){
     console.log(`hitesh says hello`)
@@ -26,7 +31,7 @@ myheros.hitesh()
 myheros.heyhitesh()
 // heropower.heyhitesh()
 
-//++++++++++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++++++++++ prototype inhritnce in object ++++++==
 
 const user={
     name:"chai",
@@ -50,7 +55,7 @@ teacher.__proto__=user
 // modern syntax
 Object.setPrototypeOf(teacher,user)
 
-//++++++++++++++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++++ ye hamne ek apna method banaya h
 
 let user1="chai aur code    "
 

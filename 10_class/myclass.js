@@ -24,7 +24,8 @@ console.log(chai.changeUsername());
 
 
 
-// brhind the seen
+// brhind the  seen agar class nhi hota too 
+
 function user1(username,email,password){
     this.username=username
     this.email-email

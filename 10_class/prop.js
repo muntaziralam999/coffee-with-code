@@ -6,7 +6,7 @@ class user {
         console.log(`username :${this.username}`)
     }
     
-    static createId(){
+    static createId(){   // static keyword se aye aapna acces rok dta hai 
         return `123`
     }
 }
